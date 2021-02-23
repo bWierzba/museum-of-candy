@@ -5,6 +5,7 @@ body{
 #mainNavbar .navbar-brand {
     color: #ea1c2c;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 #mainNavbar{
@@ -14,6 +15,7 @@ body{
 
 #mainNavbar .nav-link{
     color: white;
+    cursor: pointer;
 }
 
 #mainNavbar .nav-link:hover {
@@ -29,8 +31,34 @@ body{
     color: #ea1c2c;
     font-weight: 100;
 }
+#heading .middle-span{
+    color: white;
 
-/* to nic nie robi w sumie ale generalnie ma zmieniac wielkosc fontu przy konkretnej szerokosci */
+}
+
+
+.container-fluid h1 span {
+    transition: 1s;
+}
+.container-fluid h1:hover .first-span {
+    padding-left: 70px;
+}
+.container-fluid h1:hover .second-span {
+    padding-right: 70px;
+}
+
+img.d-none:hover{
+    transition: 1s;
+}
+
+img.d-none:hover{
+    transform: rotate(360deg);
+}
+
+
+
+
+
 @media (max-width: 1200px) {
     #heading h1{
         font-weight: 100;  
